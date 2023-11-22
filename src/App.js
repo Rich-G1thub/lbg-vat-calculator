@@ -21,7 +21,7 @@ function App() {
     const net_price = price / ((vatRate / 100));
     setNetPrice(net_price);
     setGrossPrice(price);
-    setVatToPay(price - net_price);
+    setVatToPay(net_price - price);
   };
 
   const handleVatRateChanged = (rate) => {
